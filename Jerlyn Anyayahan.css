@@ -1,0 +1,458 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand';
+    text-decoration: none;
+    list-style: none;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 12%;
+    display: flex;
+    justify-content: space-between; /* Ensures alignment between logo and nav items */
+    align-items: center;
+    background-color: #432E54; /* Light violet background */
+    z-index: 100;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for header */
+}
+
+/* Logo */
+.logo {
+    font-family: 'Agbalumo';
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+    margin-right: 20px;
+}
+.logo:hover {
+    color: rgb(241, 221, 224);
+    text-shadow: 0 0 25px pink, 0 0 50px pink;
+    transform: scale(1.1);
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-evenly; /* Equal spacing for nav links */
+    align-items: center;
+    width: auto;
+}
+
+/* General Link Styles */
+.navbar a {
+    font-family: 'Agbalumo';
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin: 0 20px;
+    text-decoration: none;
+    border-bottom: 3px solid transparent; /* Underline transition */
+    transition: 0.3s ease;
+}
+
+/* Hover and Active States */
+.navbar a:hover {
+    color: rgb(241, 221, 224);
+    border-bottom: 3px solid pink; /* Underline effect */
+}
+
+/* Specific Styles for Links */
+.personal,
+.sdg,
+.contact {
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.personal:hover,
+.sdg:hover,
+.contact:hover {
+    color: rgb(241, 221, 224);
+    text-shadow: 0 0 25px rgb(253, 195, 204), 0 0 50px pink;
+    transform: scale(1.1);
+}
+
+.home {
+    background: url('mainbgstars.gif') no-repeat center center fixed;
+    background-size: cover;
+    color:white; /* Optional: Adjust text color for visibility */
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 30px 12% 0;
+}
+.home-content{
+    max-width: 800px;
+}
+.home-content h3{
+    font-family: 'Agbalumo';
+    color: #F5EFFF;
+    font-size: 62px;
+    line-height: 1.2;
+}
+.home-content h3:hover {
+    color: rgb(241, 221, 224);
+    text-shadow: 0 0 25px pink, 0 0 50px pink;
+    transform: scale(1.1);
+}
+.home-content p{
+    font-size: 18px;
+    margin: 25px 0 30px;
+}
+.btn-box{
+    width: 345px;
+    display: flex;
+    gap: 2em;
+}
+.btn-1{
+    padding: 15px 28px;
+    background-color:#432E54;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btn-1:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+.btn-2{
+    padding: 15px 28px;
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}.btn-2:hover{
+    background-color: white;
+    color: pink;
+}
+.img-box img{
+    border-radius: 50%;
+    width: 550px;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(252, 134, 154);
+}
+::-webkit-scrollbar-track{
+    background-color:black;
+    width: 50px
+}
+
+.personal-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 8%;
+    gap: 10em;
+    background: url('aboutmebg.png');
+}
+.about-img img{
+    position: relative;
+    width: 550px;
+    box-shadow: 0 0 25px palevioletred,
+                0 0 50px pink;
+    border-radius: 50%;   
+            
+}
+.about-img:hover{
+        color: rgb(241, 221, 224);
+        text-shadow: 0 0 25px rgb(253, 195, 204),
+                     0 0 50px pink;
+        transform: scale(1.1);
+}
+.about-content h2{
+    font-family: 'Agbalumo';
+    text-align: left;
+    color: pink;
+    font-size: 42px;
+}
+.about-content h3{
+    font-size: 62px;
+    color: black;
+}
+.about-content p {
+    color: black;
+    font-size: 23px;
+    margin: 2em 0 3em;
+}
+.arduino-content2 h2 {
+    text-align: left;
+    color: pink;
+    font-size: 42px;
+    position: absolute;
+    top: 10%; /* Position towards the upper left */
+    left: 2%;
+    transform: rotate(-8deg); /* Slant the text */
+}
+.arduino-content2 p {
+    color: black;
+    font-size: 23px;
+    position: absolute;
+    top: 25%; /* Position below the heading */
+    left: 2%;
+    transform: rotate(-8deg); /* Slant the paragraph text */
+}
+.heading3 {
+    position: absolute;
+}
+.heading3 {
+    position: relative;
+    bottom: 20px;
+    left: 2px;
+    font-size: 18px;
+    transform: rotate(-8deg);
+}
+.memorease-content3 p {
+    color: black;
+    font-size: 23px;
+    position: relative; /* Use absolute positioning */
+    bottom: 1%; /* Position the paragraph just below the heading */
+    right: 2px; /* Align the paragraph to the left */
+    transform: rotate(-8deg); /* Optional slant */
+}
+
+
+.personal-section2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 8%;
+    gap: 10em;
+    background: url('projectss.png');
+    min-height: 100vh;
+}
+.memorease {
+    position: absolute;
+    bottom: 13%; /* Adjust for upper-right placement */
+    right: 3%; /* Align to the right */
+}
+.memorease img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 500px; /* Adjust size as needed */
+    transform: rotate(-5deg);
+}
+.memorease:hover{
+        color: rgb(241, 221, 224);
+        text-shadow: 0 0 25px rgb(253, 195, 204),
+                     0 0 50px pink;
+        transform: scale(1.1);
+}
+.arduino {
+    position: absolute;
+    top: 15%; /* Adjust for upper-right placement */
+    right: 5%; /* Align to the right */
+}
+.arduino img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 500px; /* Adjust size as needed */
+    transform: rotate(-5deg);
+}
+.arduino:hover{
+        color: rgb(241, 221, 224);
+        text-shadow: 0 0 25px rgb(253, 195, 204),
+                     0 0 50px pink;
+        transform: scale(1.1);
+}
+/* General Section Styling */
+.sdg-section {
+    background-color: #FFF6E3; /* Light beige background */
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns layout */
+    grid-template-rows: auto auto; /* Adjust rows dynamically */
+    gap: 20px;
+    align-items: center;
+    padding: 30px;
+}
+
+/* Grid Container for Images */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns layout */
+    gap: 20px; /* Space between images */
+    justify-content: center; /* Center images horizontally */
+    width: 50%; /* Adjust width to make the grid compact */
+    margin: 0 auto; /* Center the grid below the paragraph */
+}
+
+/* Image Styling */
+.image {
+    border-radius: 0 !important; /* Forces no rounding */
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* General Section Styling */
+.sdg-section {
+    background-color: #FFF6E3; /* Fixed background-color syntax */
+    background-size: cover;
+    color: #333; /* Adjusted text color for better readability */
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+    padding: 30px 12%;
+    text-align: center; /* Center-align text */
+    gap: 2em; /* Space between content and images */
+}
+
+/* Text Content Styling */
+.sdg-content {
+    max-width: 800px;
+    margin: auto; /* Center the content block */
+    color: #333;
+}
+
+.sdg-content h3 {
+    font-family: 'Agbalumo';
+    font-size: 42px;
+    line-height: 1.5;
+    color: #B22222; /* Dark red color for emphasis */
+    margin-bottom: 20px;
+}
+
+.sdg-content p {
+    font-size: 18px;
+    margin: 20px 0;
+    line-height: 1.8;
+    text-align: justify; /* Align paragraph text neatly */
+}
+
+/* Grid Container for Images */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    gap: 20px; /* Space between images */
+    width: 50%; /* Full width for responsiveness */
+    justify-content: center; /* Evenly space the columns */
+    margin: 0 auto;
+}
+
+/* Image Styling */
+.image {
+    width: 200px; /* Adjust image size */
+    height: 200px; /* Set consistent height */
+    object-fit: cover; /* Ensure the image scales properly */
+    border-radius: 50%; /* Make images circular */
+    box-shadow: 0 7px 15px maroon
+}
+.contact-form h2{
+    font-family: 'Agbalumo';
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    font-size: 36px;
+}
+.contact-form form{
+    max-width: 50em;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3em;
+}
+.contact-form form .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-form form .input-box input,
+.contact-form form textarea{
+    width: 100%;
+    padding: 1.5em;
+    font-size: 18px;
+    color:rgb(241, 107, 129);
+    background: #E5D9F2;
+    border-radius: .8rem;
+    margin: 1rem 0;
+    resize: none;
+}
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: #432E54
+}
+.footer .social{
+    text-align: center;
+    padding-bottom: 22px;
+    color: white;
+}
+.footer .social a{
+    font-size: 30px;
+    color: white;
+    border: 2px solid pink;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    box-shadow: inset 0 0 10px pink,
+    0 0 10px pink;
+    transition: 0.3s ease;
+}
+.footer .social a:hover{
+    transform: scale(1.2)translateY(-10px);
+    color: palevioletred;
+    border: 2px solid pink;
+}
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+.footer ul li a{
+    color: white;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+.footer ul li a:hover{
+    border-bottom: 3px solid rgb(220, 133, 162);
+}
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+.footer .copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
